@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.quote-box {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    border-top: 5px solid #8b5cf6;
+}
+
+.quote-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #8b5cf6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+blockquote {
+    font-size: 1.8rem;
+    color: #334155;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    position: relative;
+}
+
+blockquote::before, blockquote::after {
+    content: '"';
+    color: rgba(139, 92, 246, 0.3);
+    font-size: 4rem;
+    font-family: serif;
+    position: absolute;
+    top: -20px;
+}
+
+blockquote::before { left: -20px; }
+blockquote::after { right: -20px; top: auto; bottom: -50px;}
+
+#author {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #f1f5f9;
+    padding-top: 25px;
+}
+
+.actions button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#twitter {
+    background: #1da1f2;
+    color: #fff;
+}
+
+#twitter:hover { background: #0c85d0; }
+
+#new-quote {
+    background: #8b5cf6;
+    color: #fff;
+}
+
+#new-quote:hover { background: #6d28d9; }
